@@ -6,6 +6,7 @@
           <th class="text-center">Completed</th>
           <th class="text-center">UserId</th>
           <th class="text-center">Title</th>
+          <th class="text-center">Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -14,6 +15,9 @@
           <td>{{d.completed}}</td>
           <td>{{d.userId}}</td>
           <td>{{d.title}}</td>
+          <td>
+            <button (click)="trashUser(d.id)">Trash</button>
+          </td>
       </tr>
     </tbody>
   </table>

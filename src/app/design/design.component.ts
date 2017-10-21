@@ -29,9 +29,5 @@ welcome : string;
 
   ngOnInit() {
   }
-  viewUsers(): void{
-    //console.log(this.router)
-    //this.router.navigateByUrl(['./users'])
-  }
 
 }

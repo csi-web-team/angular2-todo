@@ -34,4 +34,8 @@ export class UsersComponent implements OnInit {
       });
   }
   
+  trashUser(id): void{
+    console.log(id)
+    //this.router.navigateByUrl(['./users'])
+  }
 }
