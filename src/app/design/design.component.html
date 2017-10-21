@@ -1,0 +1,30 @@
+<div class="table-responsive" style="height: 250px">
+  <table class="table">
+    <thead>
+      <tr>
+          <th class="text-center">#</th>
+          <th class="text-center">Name</th>
+          <th class="text-center">City</th>
+          <th class="text-center">Street</th>
+          <th class="text-center">Company</th> 
+          <th class="text-center">Phone</th> 
+          <th class="text-center">Username</th>
+          <th class="text-center">View Users</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data; let i = index">
+          <td>{{d.id}}</td>
+          <td>{{d.name}}</td>
+          <td>{{d.address.city}}</td>
+          <td>{{d.address.street}}</td>
+          <td>{{d.company.name}}</td>
+          <td>{{d.phone}}</td>
+          <td>{{d.username}}</td>
+          <td>
+            <a routerLink="/users"  routerLinkActive="active">View Todos</a>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
