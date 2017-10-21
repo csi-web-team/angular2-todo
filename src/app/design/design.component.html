@@ -22,7 +22,7 @@
           <td>{{d.phone}}</td>
           <td>{{d.username}}</td>
           <td>
-            <a routerLink="/users"  routerLinkActive="active">View Todos</a>
+            <a  [routerLink]="['/users']" [queryParams]="{userId: d.id}"  routerLinkActive="active">View Todos</a>
           </td>
       </tr>
     </tbody>

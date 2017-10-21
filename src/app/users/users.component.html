@@ -1,0 +1,20 @@
+<div class="table-responsive" style="height: 250px">
+  <table class="table">
+    <thead>
+      <tr>
+          <th class="text-center">#</th>
+          <th class="text-center">Completed</th>
+          <th class="text-center">UserId</th>
+          <th class="text-center">Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data; let i = index">
+          <td>{{d.id}}</td>
+          <td>{{d.completed}}</td>
+          <td>{{d.userId}}</td>
+          <td>{{d.title}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
